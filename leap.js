@@ -21,3 +21,21 @@
 // 1. Create a daily-challenges github.com repo
 // 2. Create a leap.js file in the repo.
 // 3. Add a comment to this snippet (on Slack) with a link to your file.
+
+var isLeapYear = function(yearVal) {
+    if ((yearVal % 400) == 0)
+      return "true";
+    if ((yearVal % 100) == 0)
+      return "false";
+    if ((yearVal % 4) == 0)
+      return "true";
+    return "false";
+
+};
+
+console.log(isLeapYear(1996));
+console.log(isLeapYear(1998));
+console.log(isLeapYear(2000));
+console.log(isLeapYear(1900));
+console.log(isLeapYear(2012));
+console.log(isLeapYear(1997));
