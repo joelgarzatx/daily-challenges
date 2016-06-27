@@ -23,11 +23,11 @@
 // 3. Add a comment to this snippet (on Slack) with a link to your file.
 
 var isLeap = function(yearVal) {
-    if ((yearVal % 400) == 0)
+    if ((yearVal % 400) === 0)
       return true;
-    if ((yearVal % 100) == 0)
+    if ((yearVal % 100) === 0)
       return false;
-    if ((yearVal % 4) == 0)
+    if ((yearVal % 4) === 0)
       return true;
     return false;
 
