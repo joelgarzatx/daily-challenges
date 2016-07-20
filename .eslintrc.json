@@ -1,0 +1,11 @@
+// .eslintrc.json
+{
+    "extends": "airbnb",
+    "plugins": [
+        "react",
+        "jasmine"
+    ],
+    "env": {
+      "jasmine": true
+    }
+}

@@ -36,20 +36,20 @@ The Hamming distance between these two DNA strands is 7.
 
 */
 
-var compute = function(dna1, dna2) {
-  var differenceCount = 0;
-
+const compute = function compute(dnaA, dnaB) {
+  const dna1 = dnaA.split('');
+  const dna2 = dnaB.split('');
   if (dna1.length !== dna2.length) {
-    throw new Error("DNA strands must be of equal length.");
+    throw new Error('DNA strands must be of equal length.');
   } else {
-    for (var i = 0; i < dna1.length; i++) {
-      if (dna1.charAt(i) !== dna2.charAt(i)) {
-        differenceCount++;
-      }
-    }
-    return (differenceCount);
+    const filtered = dna1.filter((el, index) => el !== dna2[index]);
+    return filtered.length;
   }
 };
+
+
+
+
 
 /// -- do not edit below ---
 
